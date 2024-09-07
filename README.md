@@ -15,7 +15,7 @@ Este es el código fuente de la Calculadora de Espectros, una calculadora experi
 - **Git**:Sistema de control de versiones utilizado para generar mejoras en mi proyecto.
 - **Github**: Plataforma en donde se aloja de forma remota mi proyecto.
 - **Gimp**:Programa de Manipulación de Imágenes GNU (GIMP) es un editor de imágenes multiplataforma. Utilizado para editar las imagenes presentadas en este proyecto.
-- **Copilot**: Microsoft Copilot es una aplicación que utiliza inteligencia artificial la cual fue utilizada para crear la imagen de fondo y los iconos de las cards.
+- **Copilot**: Microsoft Copilot es una aplicación que utiliza inteligencia artificial la cual fue utilizada para crear la imagen de fondo. 
 
 ## Estructura del Proyecto
 

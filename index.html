@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body style="background-image: url(./assets/img/background.png); width: 100%; ">
-   
+<body class="d-flex justify-content-center align-items-center vh-100">
     <!-- Esta es la estructura principal de la página, usando un contenedor de Bootstrap -->
-    <div class="container mt-5 col-12 rounded" style="background-color: black; padding: 20px; color: white;">
-        <h1>Calculadora de Espectros</h1>
+    <div class="container col-12 col-md-6 col-lg-4 rounded-5 ">
+        <h1 class="text-center">Calculadora de Espectros</h1>
 
-        <p>Calculadora experimental del Departamento de Matemáticas de Haunted University </p>
-        <div class="row mb-3 ">
-            <div class="col-8">
+        <p class="text-center">
+            Calculadora experimental del Departamento de Matemáticas de Haunted
+            University
+        </p>
+        <div class="row mb-3">
+            <div class="col-12">
                 <!-- Pantalla donde se mostrarán los números y los resultados -->
                 <input type="text" class="form-control text-end" id="resultado" value="0" disabled />
             </div>
@@ -32,82 +34,114 @@
             <!-- Botones de operadores en la primera columna -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('+')">+</button>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('+')">
+                            +
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('-')">-</button>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('-')">
+                            -
+                        </button>
+
                     </div>
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('*')">*</button>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('*')">
+                            *
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('/')">/</button>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary w-100 mb-2" onclick="operar('/')">
+                            /
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <!-- Botones de los números en las siguientes tres columnas -->
-            <div class="col-6">
+            <div class="col-9">
                 <div class="row mb-2">
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(7)">7</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(7)">
+                            7
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(8)">8</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(8)">
+                            8
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(9)">9</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(9)">
+                            9
+                        </button>
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(4)">4</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(4)">
+                            4
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(5)">5</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(5)">
+                            5
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(6)">6</button>
-                    </div>
-                </div>
-
-                <div class="row mb-2">
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(1)">1</button>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(2)">2</button>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(3)">3</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(6)">
+                            6
+                        </button>
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarDecimal()">.</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(1)">
+                            1
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(0)">0</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(2)">
+                            2
+                        </button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-danger w-100" onclick="limpiar()">AC</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(3)">
+                            3
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarDecimal()">
+                            .
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary w-100" onclick="agregarNumero(0)">
+                            0
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-danger w-100" onclick="limpiar()">
+                            AC
+                        </button>
                     </div>
                 </div>
             </div>
-        
+
             <!-- Botón de igual que ocupa varias filas -->
-            <div class="col-2">
-                <button type="button" class="btn btn-dark h-100 w-100" style="height: 70%;" onclick="calcular()">
+            <div class="col-3">
+                <button type="button" class="btn h-100 w-100 btn-dark" style="height: 70%" id="btnigual" onclick="calcular()">
                     =
                 </button>
             </div>
         </div>
     </div>
-
 
     <!-- Enlaces a bibliotecas externas de JavaScript para que Bootstrap funcione bien -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
